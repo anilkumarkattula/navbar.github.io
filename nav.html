@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>DOCUMENT</title>
+   <style>
+        #nav{
+            border: 2px solid ;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            background-color: rgb(95, 76, 76);
+            position: fixed;
+            top: 0%;
+        }
+        #nav>button{
+            list-style-type: none;
+            border: 1px solid black;
+            display: flex;
+            background-color: rgb(95, 76, 76);
+            justify-content: space-between;
+            width: 10%;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        #btn1:hover{
+            background-color: rgb(64, 64, 64);
+            transition: 0.7s;
+            border: 3px solid white;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #btn2:hover{
+            background-color: rgb(64, 64, 64);
+            transition: 0.7s;
+            border: 3px solid white;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #btn3:hover{
+            background-color: rgb(64, 64, 64);
+            transition: 0.7s;
+            border: 3px solid white;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #btn4:hover{
+            background-color: rgb(64, 64, 64);
+            transition: 0.7s;
+            border: 3px solid white;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #btn5:hover{
+            background-color: rgb(64, 64, 64);
+            transition: 0.7s;
+            border: 3px solid white;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #btn1:focus{
+            background-color: rgb(197,170,106);
+            color: black;
+            font-size:20px;
+            outline-color: black;
+            outline-style: solid;
+            box-shadow: 10px 2px 2px 2px black;
+            outline-offset:0cqb;
+            box-sizing:content-box;
+            
+        }
+        #btn2:focus{
+            background-color: rgb(197,170,106);
+            outline-color: black;
+            font-size:20px;
+            outline-style: solid;
+            box-shadow: 4px 2px 2px 2px black;
+            outline-offset:0cqb;
+            box-sizing:content-box;
+        }
+        #btn3:focus{
+            background-color: rgb(197,170,106);
+            outline-color: black;
+            font-size:20px;
+            outline-style: solid;
+            box-shadow: 4px 2px 2px 2px black;
+            outline-offset:0cqb;
+            box-sizing:content-box;
+        }
+        #btn4:focus{
+            background-color: rgb(197,170,106);
+            outline-color: black;
+            font-size:20px;
+            outline-style: solid;
+            box-shadow: 4px 2px 2px 2px black;
+            outline-offset:0cqb;
+            box-sizing:content-box;
+        }
+        #btn5:focus{
+            background-color: rgb(197,170,106);
+            outline-color: black;
+            font-size:20px;
+            outline-style: solid;
+            box-shadow: 4px 2px 2px 2px black;
+            outline-offset:0cqb;
+            box-sizing: content-box;
+        }
+        #home{
+            border: 2px solid;
+            width: 100%;
+            height: 200vh;
+            margin-top: 60px;
+            
+            
+            background-color: rgb(109,126,146);
+        }
+        #home>#imgBox{
+            border: 2px solid rgb(109,126,146);
+            height: 50%;
+            width: 43%;
+            float: right;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+
+            
+        }
+        #home>#imgBox>img{
+            height: 70%;
+            width: 40%;
+            
+            
+            border-radius: 70px;
+        }
+        #nav>#logo{
+            border: 2px solid rgb(95, 76, 76);
+            width: 40%;
+            height: 50px;
+            align-items: center;
+
+        }
+        #nav>#logo>img{
+            height: 115%;
+            width: 30%;
+           
+            
+        }
+        #home>#quote{
+            border: 2px solid  rgb(109,126,146);
+            height: 40%;
+            width: 50%;
+            float: left;
+            margin-top: 30px;
+            
+            margin-left: 6%;
+            
+        }
+        #home>#quote>img{
+            height: 80%;
+            width: 90%;
+        }
+        #home>#quote>#btns{
+            border: 2px solid rgb(109,126,146);
+            height: 50px;
+            
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        #home>#quote>#btns>button{
+            height: 50px;
+            width: 25%;
+            background-color: rgb(109,126,146);
+        }
+        #home>#quote>#btns>button:hover{
+            background-color: black;
+            color: white;
+        }
+        .navbarscroll.navbarDark{
+            background-color: black;
+        }
+       #quote>#blankLoginPage>#detailsPage{
+            border: 2px solid black;
+            height: 50%;
+            width: 80%;
+            background-color: rgb(109,126,146);
+            margin-top: 15%;
+            margin-left: 10%;
+            align-items: center;
+            
+        }
+        #mailBox{
+            height: 40px;
+            width: 100%;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #passBox{
+            height: 40px;
+            width: 100%;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+       #email{
+            height: 25px;
+            width: 50%;
+            background-color: white;
+            margin-left: 50px;
+            float: right;
+            
+        }
+        #password{
+            height: 25px;
+            width: 50%;
+            background-color: white;
+            
+        }
+        #checkLogin{
+           
+            
+            height: 40px;
+            width: 100px;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+        }
+        #buttonBox{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            margin-top: 20px;
+            align-items: center;
+            border: 2px solid rgb(109,126,146);
+            justify-content: space-around;
+        }
+        #goBack{
+            height: 40px;
+            width: 100px;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+        }
+        
+   </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="logo">
+            <img src="./img/logo1Cafe.jpg" alt="">
+        </div>
+        <button id="btn1">Home</button>
+        <button id="btn2">About</button>
+        <button id="btn3">Products</button>
+        <button id="btn4">Locations</button>
+        <button id="btn5">Contact Us</button>
+    </div>
+    <div id="home">
+        <div id="quote">
+            <div id="blankLoginPage"></div>
+            <img src="./img/cafeQuote.jpg" alt="" id="quoteImage">
+           <div id="btns">
+            <button id="loginBtn" onclick="redirectFunction()">Log in</button>
+           <button id="signinBtn">Sign in</button>
+           </div>
+        </div>
+       <div id="imgBox"> <img src="./img/Almond-Milk-Coffee-001 (1).webp" alt=""></div>
+    </div>
+
+    <script src="./project1.js">
+        
+    </script>
+
+
+
+
+
+    
+</body>
+</html>
